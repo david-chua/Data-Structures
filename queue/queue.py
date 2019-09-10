@@ -7,7 +7,6 @@ class Node:
         self.value = value
         self.next = None
 
-
 class Single_linked_list:
     def __init__(self):
         self.head = None
@@ -32,7 +31,6 @@ class Queue:
         self.size += 1
         return self
 
-    # Remove from the from of the linked list
     def dequeue(self):
         if self.size == 0:
             return None
@@ -44,6 +42,7 @@ class Queue:
             self.storage.head = self.storage.head.next
         self.size -= 1
         return return_value
+
 
     def len(self):
         return self.size
